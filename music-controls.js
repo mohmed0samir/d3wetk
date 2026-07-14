@@ -1,0 +1,2 @@
+/* Dedicated mute control; volume remains independently adjustable. */
+document.addEventListener('DOMContentLoaded',()=>{let muted=false;$('#volume').oninput=e=>{if(recitation)recitation.volume=Number(e.target.value)};$('#muteButton').onclick=()=>{muted=!muted;if(recitation)recitation.muted=muted;$('#muteButton').textContent=muted?'⌁̸':'⌁';$('#muteButton').setAttribute('aria-label',muted?'إلغاء كتم الصوت':'كتم الصوت')}});
