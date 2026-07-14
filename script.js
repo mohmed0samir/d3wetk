@@ -1,10 +1,10 @@
 /* All editable wedding details live here. Update this single object before deployment. */
 const wedding = {
-  groom: 'منا', bride: 'احمد',
+  groom: 'رامي', bride: 'ليان',
   date: '2026-12-20T20:00:00+02:00', dateLabel: 'السبت، 20 ديسمبر 2026', time: 'الثامنة مساءً',
   venue: 'قاعة قصر النخيل', location: 'https://maps.google.com/?q=30.0444,31.2357',
   /* تلاوة الآية 21 من سورة الروم. يمكن استبدال الرابط بملف MP3 محلي داخل assets/music عند الحاجة. */
-  music: 'https://download.quranicaudio.com/quran/abdul_basit_murattal/030021.mp3', title: 'دعوة زفاف رامي و ليان', description: 'نتشرف بدعوتكم لمشاركتنا ليلة العمر.'
+  music: 'https://verses.quran.foundation/Alafasy/mp3/030021.mp3', title: 'دعوة زفاف رامي و ليان', description: 'نتشرف بدعوتكم لمشاركتنا ليلة العمر.'
 };
 const $ = (s) => document.querySelector(s);
 function nameFromQuery(){ return new URLSearchParams(location.search).get('guest')?.trim(); }
