@@ -1,0 +1,5 @@
+/* Final invitation refinements: keep the guest's name unobstructed and remove RSVP. */
+.recipient{top:245px!important;z-index:6!important}
+.seal{top:142px!important}
+#rsvpButton,#rsvpModal{display:none!important}
+@media(max-width:560px){.recipient{top:180px!important}.seal{top:86px!important}}
